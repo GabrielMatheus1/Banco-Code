@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "./src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "migracao": "node ./src/infra/migration.js"
+  },
+  "keywords": [],
+  "author": "Gabriel Matheus <gabrielmatheus0110@gmail.com>",
+  "license": "ISC",
+  "description": "banco de dados do meu projeto final da MFX Academy",
+  "dependencies": {
+    "@fastify/cors": "^11.0.1",
+    "@fastify/swagger": "^9.4.2",
+    "@fastify/swagger-ui": "^5.2.2",
+    "fastify": "^5.2.2",
+    "node-modules": "^0.0.1",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  }
+}
