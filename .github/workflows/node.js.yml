@@ -39,4 +39,4 @@ jobs:
           npm list fastify
 
       - name: Run server script
-        run: node src/app/server.js # Ajuste conforme o caminho do arquivo
+        run: node src/server.js # Ajuste conforme o caminho do arquivo
