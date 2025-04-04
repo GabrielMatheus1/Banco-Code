@@ -23,10 +23,20 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: '16' # Use uma versão compatível, como Node.js 16 ou superior
 
-      - name: Install dependencies
-        run: npm install
+      - name: Reinstall dependencies
+        run: |
+          rm -rf node_modules package-lock.json
+          npm install
+
+      - name: Debug Fastify and Node.js
+        run: |
+          echo "Node.js version:"
+          node -v
+          echo "npm version:"
+          npm -v
+          npm list fastify
 
       - name: Run server script
-        run: node ../src/server.js
+        run: node src/app/server.js # Ajuste conforme o caminho do arquivo
