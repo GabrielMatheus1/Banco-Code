@@ -43,13 +43,16 @@ app.register(insertProduct, { prefix: '/v1'});
 //   optionsSuccessStatus: 204,
 // });
 
-const PORT = 3033;
+const PORT = process.env.PORT || 4000;
 
 // Run server!
-try {
-  await app.listen({ port: PORT })
-  app.log.info(`Server listening on ${app.server.address().port}`)
-} catch (err) {
-  app.log.error(err)
-  process.exit(1)
-}
+const startServer = async () => {
+  try {
+    await app.listen({ port: PORT });
+    app.log.info(`Server listening on http://localhost:${PORT}`);
+  } catch (err) {
+    app.log.error(err);
+    process.exit(1);
+  }
+};
+
