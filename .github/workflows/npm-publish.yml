@@ -37,13 +37,13 @@ jobs:
       # Configuração do ambiente (opcional)
       - name: Configure environment
         run: |
-            echo "NODE_ENV=production" >> $GITHUB_ENV
-            echo "DATABASE_URL=postgres://user:password@codebuger:3033/mydb" >> $GITHUB_ENV
-            echo "API_URL=http://localhost:3000" >> $GITHUB_ENV
-            echo "JWT_SECRET=mysecret" >> $GITHUB_ENV
-            echo "REDIS_URL=redis://codebuger:3033" >> $GITHUB_ENV
-            echo "S3_BUCKET=mybucket" >> $GITHUB_ENV
-            echo "S3_ACCESS_KEY=myaccesskey" >> $GITHUB_ENV
+NODE_ENV: production
+DATABASE_URL: postgres://user:password@codebuger:3033/mydb
+API_URL: http://codebburguer:3000
+JWT_SECRET: mysecret
+REDIS_URL: redis://codebuger:3033
+S3_BUCKET: mybucket
+S3_ACCESS_KEY: myaccesskey
 
 
 
