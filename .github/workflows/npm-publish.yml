@@ -34,17 +34,6 @@ jobs:
       - name: Run migracao
         run: npm run migracao
 
-      # Configuração do ambiente (opcional)
-      - name: Configure environment
-        run: |
-NODE_ENV: production
-DATABASE_URL: postgres://user:password@codebuger:3033/mydb
-API_URL: http://codebburguer:3000
-JWT_SECRET: mysecret
-REDIS_URL: redis://codebuger:3033
-S3_BUCKET: mybucket
-S3_ACCESS_KEY: myaccesskey
-
 
 
       # Iniciar o servidor
