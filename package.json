@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "start": "node ./server.js",
-    "migracao": "node ./src/infra/migration.js"
+    "migracao": "node ./src/infra/migration.js",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "Gabriel Matheus <gabrielmatheus0110@gmail.com>",
