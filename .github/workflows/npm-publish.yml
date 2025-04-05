@@ -34,11 +34,6 @@ jobs:
       - name: Run migracao
         run: npm run migracao
 
-        
-      # Build da aplicação (se necessário)
-      - name: Build app
-        run: npm run build
-
       # Configuração do ambiente (opcional)
       - name: Configure environment
         run: |
