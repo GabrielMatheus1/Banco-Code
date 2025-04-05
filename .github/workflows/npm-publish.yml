@@ -12,10 +12,16 @@ on:
       - main
 
 jobs:
-  deploy:
+  register-url:
     runs-on: ubuntu-latest
-
+    
     steps:
+      - name: Definir URL
+        run: echo "TARGET_URL=https://code.bburguer.com/Banco-Code" >> $GITHUB_ENV
+
+      - name: Mostrar URL
+        run: echo "A URL registrada é $TARGET_URL"
+
       # Checkout do código
       - name: Checkout code
         uses: actions/checkout@v3
